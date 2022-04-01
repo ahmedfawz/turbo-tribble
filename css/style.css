@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,700;0,900;1,200;1,300&display=swap');
+
+/*Start global ruled*/
+*
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*End global ruled*/
+
+/********From work ******/
+.head-border::after
+{
+  content: "";
+  display: block;
+  width: 65px;
+  height: 3px;
+  background-color: #ee8337;
+  margin: 25px 0;
+}
+
+@media (max-width: 991px)
+{
+  .head-border::after
+  {
+    margin: 25px auto;
+  }
+}
+
+
+
+/********From work ******/
+
+body
+{
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
+}
+html {scroll-behavior: smooth;}
+
+/*** Strat Nav ***/
+
+.navbar {background-color: #000 !important;}
+
+.navbar-brand { text-transform: uppercase;}
+
+.navbar-brand span{color: #ee8337;}
+
+.navbar .nav-link {margin-left: 12px;}
+
+/*** End Nav ***/
+
+/**** Start Header ****/
+header
+{
+  background: url(../img/header.png) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  padding-top: 70px;
+}
+
+header .centering{padding-top: 25vh;}
+
+header .overlay
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+header h1{font-size: 60px; font-weight: 700;}
+
+header h1 span{color: #ee8337;}
+
+header .lead{margin: 0;}
+
+header p{margin-top: 40px;}
+
+header form
+{
+  width: 300px;
+  background-color: #FFF;
+  border-radius: 5px;
+  margin-left: 6%;
+  overflow: hidden;
+}
+
+header form h2
+{
+  background-color: #F5F5F5;
+  color: #333 !important;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 15px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+header form h2 span{color: #ee8337;}
+
+header form .form-control
+{
+  width: 80%;
+  margin: 0 auto 30px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none !important;
+  border-bottom: 1px solid #ccc;
+}
+
+header form .btn
+{
+  background-color: #ee8337;
+  color: #FFF;
+}
+
+@media (max-width: 767px)
+{
+  header .centering { padding-top: 85px;}
+  header .btn{display: none;}
+}
+
+@media (max-width: 767px)
+{
+  header h1{font-weight: normal; font-size: 30px; }
+  header p{margin: 16px auto;}
+}
+
+@media (max-width: 780px){header form { margin-left: 0; margin-top: 10px;}}
+
+/**** End Header ****/
+
+/**** Start section Social Media ****/
+
+.social-media{padding-top: 15px;}
+
+.social-media p{color: #aaa; line-height: 1.2;}
+
+.social-media i
+{
+  color: #ccc;
+  margin: 20px 18px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.social-media .fa-facebook-f:hover{color:#3b5998 ;}
+
+.social-media .fa-twitter:hover{color:#1da1f2 ;}
+
+.social-media .fa-youtube:hover{color: #ff0000;}
+
+.social-media .fa-instagram:hover{color: #c32aa3;}
+
+.social-media .fa-rss:hover{color: #ffa633;}
+
+.social-media .fa-linkedin-in:hover{color: #0a66c2;}
+
+.social-media .fa-google-plus-g:hover{color: #bd081c;}
+
+@media (max-width: 780px)
+{
+  .social-media{text-align: center;}
+  .social-media i{font-size: 36px; margin: 12px 15px;}
+}
+
+/**** End section Social Media ****/
+
+/***Strat section Tab ***/
+
+.tab 
+{
+  background-color: #e9ecef;
+}
+.tab .btn
+{
+  background-color: #ee8337;
+  color: #FFF;
+}
+
+.tab img{margin: 70px auto;}
+
+@media (max-width: 780px)
+{
+  .tab .jumbotron{text-align: center;}
+  .tab img {display: none;}
+}
+
+/***End section Tab ***/
+
+/***Strat section Sublist ***/
+
+.Sublist 
+{
+  padding: 80px 0;
+  background-color: #FFF;
+}
+
+.Sublist img
+{
+  margin-top: 40px;
+  min-width: 100%;
+}
+
+.Sublist h3
+{
+  font-weight: bold;
+}
+
+.Sublist .info
+{
+  margin-bottom: 40px;
+}
+
+.Sublist .info .tempor
+{
+  color: #777;
+  line-height: 1.7;
+}
+
+.Sublist .info-last
+{
+  margin-top: 30px;
+}
+
+.Sublist .info-last i
+{
+  float: left;
+  color: #ee8337;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 33px;
+  border-radius: 50%;
+  border: 2px solid #ee8337;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.Sublist .info-last p,
+.Sublist .info-last h5
+{
+  color: #0a66c2;
+}
+
+@media (max-width: 766px)
+{
+  .Sublist {padding: 40 0; text-align: center;}
+  .Sublist img {display: none;}
+  .Sublist .info-last i{float: none; margin: 15px auto;}
+}
+
+/****** End ******/
+
+/***Strat section Picture ***/
+
+.Picture
+{ background-color: #e9ecef; 
+  padding: 80px 0;
+}
+
+@media (max-width: 768px)
+{
+  .Picture {text-align: center;}
+  .Picture img {display: none;}
+  .Picture .lead {line-height: 1.8; color: #111;}
+}
+
+/***End section Picture ***/
+
+/****** Start This Is Awesome ***/
+
+.awesome {padding: 80px 0;}
+
+.awesome .awesome-desc {color: #777;}
+
+.awesome .box {margin-top: 35px;}
+
+.awesome .box i
+{
+  color: #ee8337;
+  border: 2px solid #ee8337;
+  width: 70px;
+  height: 70px;
+  line-height: 64px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.awesome .box .feat-info
+{
+  color: #a9aaac;
+  margin-top: 20px;
+}
+
+
+.head-border-center:after 
+{
+  content: '';
+  display: block;
+  width: 65px;
+  height: 3px;
+  background-color: #ff8b38;
+  margin: 25px auto;
+}
+
+/****** End This Is Awesome ***/
+
+/****** Start Price optionse ***/
+
+.Price-options
+{
+  background-color: #f5f5f5;
+  padding: 80px 0;
+}
+
+.Price-options p{color: #a9aaac; margin-bottom: 40px;}
+
+.Price-options .card
+{
+  background-color: #333;
+}
+
+.Price-options .card h3
+{
+  color: #fff;
+  margin: 18px 0 auto;
+}
+
+.card>hr 
+{
+  margin-right: 0;
+  margin-left: 0;
+  border: .5px solid #fff;
+}
+.Price-options .card-title { color: #FFF; line-height: 24px;}
+
+.Price-options .card-title span{font-size: 80px; font-weight: bold;}
+
+.card-footer
+{
+  padding: .70rem 1rem;
+  border-top: 1px solid #FFF;
+  background: none;
+}
+
+.text-muted 
+{
+  color: #fff !important;
+  font-size: 17px;
+}
+
+.list-group-flush>.list-group-item {border-bottom: 1px solid #e9ecef;}
+
+.Price-options .card{margin-top: 17px;}
+
+.Price-options .professional{margin-top: 30px;}
+
+@media (max-width: 768px)
+{
+  .awesome h1{font-size: 22px ;}
+}
+
+/****** End ******/
+
+/***STrat our *****/
+
+.our{padding: 80px 0; background-color: #fff;}
+
+.our .box-toles
+{
+  margin-top: 30px;
+}
+
+.our .box-toles .client-say
+{
+  background-color: #F5F5F5;
+  color: #8e8f93;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.our .media-body
+{
+  flex: .4;
+}
+
+.our .media-body p{opacity: .5;}
+
+@media (max-width: 768px)
+{
+  .our .h1{font-size: 22px; font-weight: 400;}
+}
+
+/***End our *****/
+
+/******Strar  Stylish  AXU *******/
+
+.Stylish
+{
+  background: url(../img/stylish.png) no-repeat  center center ;
+  min-height: 300px;
+  color: #FFF;
+  position: relative;
+}
+
+.Stylish .overlay
+{
+  background-color: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 60px 0;
+}
+
+.Stylish h2 {margin: 20px auto;}
+
+.Stylish p
+{
+  font-weight: 300;
+  margin: 0 auto 20px;
+}
+/************** End *************/
+
+/**** Strat contact-us *****/
+
+.contact-us
+{
+  padding: 80px 0;
+}
+
+.contact-us h2{letter-spacing: 2px; font-size: 40px;}
+
+.contact-us p{color: #a9aaac;}
+
+.contact-us form
+{
+  margin-top: 40px;
+}
+
+.contact-us form input[type=text]
+{
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.contact-us form textarea
+{
+  height: 180px;
+  border: none;
+  border-bottom: 1px solid #a9aaac;
+}
+
+.contact-us .btn{font-size: 18px;}
+
+/****** End *******/
+
+/******* Strat footer *****/
+
+footer
+{
+  padding: 15px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+footer span
+{
+  font-size: 19px;
+  font-weight: 600;
+}
+
+/****** End footer ******/
